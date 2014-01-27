@@ -2,6 +2,12 @@
 h1, p, nav {
     text-align: center;
     font-family: Arial;
+    color: #F6F7BD;
+}
+
+body {
+    background: #E6AC27;
+    
 }
 
 #text {
@@ -11,7 +17,8 @@ h1, p, nav {
     margin-bottom: 20px;
     margin-top: 20px;
     padding: 20px;
-    box-shadow: 0px 0px 20px #6d6d6d;
+    box-shadow: 0px 0px 20px #3D3428;
+    background: #BF4D28
 }
 
 #text p {
