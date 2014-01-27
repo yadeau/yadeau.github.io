@@ -21,8 +21,10 @@ h1, p, nav {
 nav {
     border: dashed 1px;
     border-radius: 10px;
-    width: 50%;
 }
 
-#navigation {
+.navigation {
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
 }
