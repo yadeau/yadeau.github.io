@@ -22,11 +22,24 @@
 			function coords(evt) {
 				document.getElementById("X").innerHTML="X: " + evt.clientX;
 				document.getElementById("Y").innerHTML="Y: " + evt.clientY;
+				return {
+        			x : evt.clientX,
+        			y : evt.clientY
+    			};
+			}
+			
+			function boxFollow(evt) {
+				position = coords(evt);
+				console.log(position.x)
+				box = document.getElementById("box");
+				box.style.right = evt.clientY + "px";
+				box.style.left = evt.clientX+ "px";
 			}
 		</script>
 	</head>
 
-	<body onmousemove="coords(event)">
+	<body onmousemove="boxFollow(event)">
+		<div id="box"></div>
 		<div>
 			<header>
 				<h1>new_file</h1>
