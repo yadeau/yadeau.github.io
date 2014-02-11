@@ -30,16 +30,18 @@
 			
 			function boxFollow(evt) {
 				position = coords(evt);
-				console.log(position.x)
 				box = document.getElementById("box");
-				box.style.right = evt.clientY + "px";
-				box.style.left = evt.clientX+ "px";
+				box.style.top = position.y + "px";
+				box.style.left = position.x + "px";
 			}
 		</script>
 	</head>
 
 	<body onmousemove="boxFollow(event)">
-		<div id="box"></div>
+		<div id="box">			
+			<p id="X">X: </p>
+			<p id="Y">Y: </p>
+		</div>
 		<div>
 			<header>
 				<h1>new_file</h1>
@@ -52,11 +54,6 @@
 					<a href="/contact">Contact</a>
 				</p>
 			</nav>
-			<p id="X">X: </p>
-			<p id="Y">Y: </p>
-			<div>
-
-			</div>
 
 			<footer>
 				<p>
