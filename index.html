@@ -20,19 +20,21 @@
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
 		<script>
+			// Gets the position of the mouse
 			function coords(evt) {
 				document.getElementById("X").innerHTML="X: " + evt.clientX;
 				document.getElementById("Y").innerHTML="Y: " + evt.clientY;
+				
 				return {
-        			x : evt.clientX,
-        			y : evt.clientY
+        			x : evt.clientX + document.body.scrollLeft,
+        			y : evt.clientY + document.body.scrollTop
     			};
 			}
 			
 
-			
-			$( document ).mousemove( function boxFollow(evt) {
-				position = coords(evt);
+			// When the mouse moves, this will move the element to the mouse
+			$( document ).mousemove( function boxFollow() {
+				position = coords(event);
 				box = document.getElementById("box");
 				box.style.top = position.y + "px";
 				box.style.left = position.x + "px";
@@ -40,7 +42,7 @@
 		</script>
 	</head>
 
-	<body onmousemove="boxFollow(event)">
+	<body>
 		<div id="box">			
 			<p id="X">X: </p>
 			<p id="Y">Y: </p>

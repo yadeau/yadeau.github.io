@@ -4,3 +4,7 @@
 	border: dotted 1px;
 	position: absolute;
 }
+
+body {
+	height: 1000px;
+}
