@@ -3,10 +3,6 @@ body, html {
 	height: 100%;
 }
 
-.content{
-
-}
-
 .img-circular{
 	display: block;
     margin-left: auto;
@@ -35,9 +31,6 @@ body, html {
 	background: url('images/main1.jpg');
 	background-size: cover;
 	background-attachment: scroll;
-}
-.title_div::after{
-
 }
 
 .contact_div {
