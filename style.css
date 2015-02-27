@@ -3,9 +3,46 @@ body, html {
 	height: 100%;
 }
 
+.content{
+
+}
+
+.img-circular{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+ 	width: 200px;
+ 	height: 200px;
+	background-image: url('images/JustinYaDeau.jpg');
+	background-size: cover;
+	display: block;
+	border-top-left-radius: 100px;
+	-webkit-border-top-left-radius: 100px;
+	-moz-border-top-left-radius: 100px;
+	border-bottom-right-radius: 100px;
+	-webkit-border-bottom-right-radius: 100px;
+	-moz-border-bottom-right-radius: 100px;
+	border-top-right-radius: 100px;
+	-webkit-border-top-right-radius: 100px;
+	-moz-border-top-right-radius: 100px;
+	border-bottom-left-radius: 100px;
+	-webkit-border-bottom-left-radius: 100px;
+	-moz-border-bottom-left-radius: 100px;
+}
+
 .title_div {
 	height: 100%;
-	background: url(http://i.imgur.com/lQ5EYel.gif);
+	background: url('images/main1.jpg');
+	background-size: cover;
+	background-attachment: scroll;
+}
+.title_div::after{
+
+}
+
+.contact_div {
+	height: 100%;
+	background-color: white;
 	background-size: cover;
 }
 
