@@ -3,14 +3,7 @@ body, html {
 	height: 100%;
 }
 
-a {
-    display: block;
-    width: 60px;
-}
 
-li {
-    display: inline;
-}
 
 .img-circular{
 	display: block;
