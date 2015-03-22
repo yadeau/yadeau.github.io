@@ -54,10 +54,10 @@ body, html {
 	border-color: white;
 	background-color: rgba(0,0,0,.2);
 	text-align: center;
-	color: white
+	color: white;
 }
 
 .content {
 	text-shadow: 1px 1px rgba(0,0,0,1);
-	color: white
+	color: white;
 }
