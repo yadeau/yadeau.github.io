@@ -3,13 +3,20 @@ body, html {
 	height: 100%;
 }
 
-a {
-    display: block;
-    width: 60px;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 li {
-    display: inline;
+    float: left;
+}
+
+a {
+    display: block;
+    width: 60px;
 }
 
 .img-circular{
