@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="angularjs-starter">
 
 <head>
 	<meta charset="UTF-8">
@@ -11,7 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="lib/bootstrap-3.3.2-dist/css/bootstrap.css">
 	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 </head>
-<body>
+<body ng-controller="MainCtrl">
 
 	<section class="text-center title_div">
 		<div class = "content">
@@ -20,7 +20,7 @@
 			</header>
 			<div class="img-circular"></div>
 			<h1 class="title">JUSTIN YADEAU</h1>
-			<a ng-href="#projects">Projects</a>
+			<a ng-click="scroolTo('projects')">Projects</a>
 			<h2>This is a work in progress</h2>
 			<input ng-model="content" class="input_box"></textarea>
 			<p id="web-projects" class="content">{{content}}</p>	
