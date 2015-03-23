@@ -1,22 +1,19 @@
 <!doctype html>
-<html lang="en" ng-app="angularjs-starter">
+<html lang="en" ng-app>
 
 <head>
 	<meta charset="UTF-8">
 	<title>Justin B. YaDeau</title>
-	<script src="lib/angular/angular.min.js"></script>
-	<script src="lib/angular/angular-route.min.js"></script>
-	<script src="lib/angular/angular-animate.min.js"></script>
-	<script src="script.js"></script>
+	<script src="scripts.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="lib/bootstrap-3.3.2-dist/css/bootstrap.css">
 	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
 </head>
 <body ng-controller="MainCtrl">
 	
 	<section class="text-center title_div">
 		<div class = "content">
-			<a ng-click="scroolTo('projects')">Projects</a>
 
 			<header>
 				<na ng-include="'views/nav.html'"></nav>
@@ -28,10 +25,13 @@
 			<p id="web-projects" class="content">{{content}}</p>	
 		</div>
 	</section>
-	<div id="projects" class="text-center contact_div">
+	<div class="text-center contact_div">
 		<h1 class="title">Projects</h1>
 		
 	</div>
+	<script src="lib/angular/angular.min.js"></script>
+	<script src="lib/angular/angular-route.min.js"></script>
+	<script src="lib/angular/angular-animate.min.js"></script>
 </body>
 </html>
 
