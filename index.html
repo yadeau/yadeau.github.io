@@ -13,6 +13,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 </head>
 <body ng-controller="MainCtrl">
+	<a ng-click="scroolTo('projects')">Projects</a>
 
 	<section class="text-center title_div">
 		<div class = "content">
@@ -21,14 +22,13 @@
 			</header>
 			<div class="img-circular"></div>
 			<h1 class="title">JUSTIN YADEAU</h1>
-			<a ng-click="scroolTo('projects')">Projects</a>
 			<h2>This is a work in progress</h2>
 			<input ng-model="content" class="input_box"></textarea>
 			<p id="web-projects" class="content">{{content}}</p>	
 		</div>
 	</section>
-	<div class="text-center contact_div">
-		<h1 id="projects" class="title">Projects</h1>
+	<div id="projects" class="text-center contact_div">
+		<h1 class="title">Projects</h1>
 		
 	</div>
 </body>
