@@ -3,7 +3,7 @@
 
 	app.directive("contactInfo", function(){
 		restrict: 'E',
-		templateUrl:'contact-info.html'
+		templateUrl:'../views/contact-info.html'
 	});
 
 })();
